@@ -1,0 +1,78 @@
+<html>
+  <head>
+    <title>audioplayer</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+  </head>
+  <body>
+    <div id="container">
+      <div id="audio-image">
+        <img class="cover" />
+      </div>
+      <div id="audio-player">
+        <div id="audio-info">
+          <span class="artist"></span> - <span class="title"></span>
+        </div>
+        <input id="volume" type="range" min="0" max="10" value="5" />
+        <br />
+        <div id="buttons">
+          <span>
+            <button id="prev"></button>
+            <button id="play"></button>
+            <button id="pause"></button>
+            <button id="stop"></button>
+            <button id="next"></button>
+          </span>
+        </div>
+        <div class="clearfix"></div>
+        <div id="tracker">
+          <div id="progressBar">
+            <span id="progress"></span>
+          </div>
+          <span id="duration"></span>
+        </div>
+        <div class="clearfix"></div>
+        <ul id="playlist" class="hidden">
+          <li
+            song="PREMIERE _ CCO - Transitive Closure.mp3"
+            cover="cover1.jpg"
+            artist="CCO"
+          >
+		  PREMIERE _ CCO - Transitive Closure
+          </li>
+          <li
+            song="PREMIERE _ Gegen Mann - Mistery Of Sin v2.mp3"
+            cover="cover1.jpg"
+            artist="Gegen Mann"
+          >
+		  PREMIERE _ Gegen Mann - Mistery Of Sin v2
+          </li>
+          <li
+            song="PREMIERE _ Kaf - Mångata [IO].mp3"
+            cover="cover1.jpg"
+            artist="Kaf"
+          >
+		  PREMIERE _ Kaf - Mångata [IO]
+          </li>
+          <li
+            song="PREMIERE _ Sickdisco - Aliens Eating People.mp3"
+            cover="cover1.jpg"
+            artist="Sickdisco"
+          >
+		  PREMIERE _ Sickdisco - Aliens Eating People
+          </li>
+          <li
+            song="PREMIERE_ London Modular Alliance - Oscillator Reflux (Private Persons).mp3"
+            cover="cover1.jpg"
+            artist="London Modular Alliance"
+          >
+		  PREMIERE_ London Modular Alliance - Oscillator Reflux (Private Persons)
+          </li>
+          
+        </ul>
+      </div>
+    </div>
+
+    <script src="js/jquery.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
